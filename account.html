@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EIRA | Account</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      background-color: white;
+      color: black;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: papayawhip;
+      padding: 1px 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.50);
+    }
+
+    .logo {
+      height: 109px;
+    }
+
+    .icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .icons a {
+      text-decoration: none;
+      color: black;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .icons a img {
+      width: 30px;
+      height: 30px;
+      display: block;
+      margin: auto;
+      margin-bottom: 5px;
+    }
+
+    .offer-banner {
+      position: relative;
+      width: 100%;
+      height: 270px;
+      overflow: hidden;
+    }
+
+    .offer-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.6);
+    }
+
+    .offer-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .offer-text h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .offer-text p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .claim-btn {
+      background-color: #e6a4a4;
+      color: white;
+      padding: 10px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .claim-btn:hover {
+      background-color: #d38d8d;
+    }
+
+    .login-section {
+      text-align: center;
+      padding: 40px 20px;
+      animation: slideUp 0.9s ease-in-out;
+    }
+
+    .login-section h2 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .login-section p {
+      margin-bottom: 20px;
+    }
+
+    .input-box {
+      width: 280px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .otp-btn {
+      background-color: beige;
+      color: white;
+      padding: 10px 25px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .otp-btn:hover {
+      background-color:white;
+    }
+
+    .or-line {
+      margin: 30px auto;
+      width: 200px;
+      border-top: 1px solid #ccc;
+      position: relative;
+    }
+
+    .or-line::before {
+      content: "Or Login Using";
+      position: absolute;
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      padding: 0 8px;
+      font-size: 14px;
+    }
+
+    .whatsapp-login {
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+      background-color: #25D366;
+      color: white;
+      transition: transform 0.2s ease;
+    }
+
+    .whatsapp-login:hover {
+      transform: scale(1.05);
+    }
+
+    .help-link {
+      display: block;
+      margin-top: 20px;
+      font-size: 14px;
+      text-decoration: underline;
+      color: black;
+    }
+
+    .terms {
+      font-size: 12px;
+      margin-top: 30px;
+      color: gray;
+    }
+
+    .terms a {
+      color: #000;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translate(-50%, -60%); }
+      to { opacity: 1; transform: translate(-50%, -50%); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <img src="images/elogo.png" alt="EIRA Logo" class="logo">
+    <div class="icons">
+      <a href="index.html"><img src="images/home.jpeg" alt="Home"><span>Home</span></a>
+      <a href="wishlist.html"><img src="images/wish.jpeg" alt="Wishlist"><span>Wishlist</span></a>
+      <a href="account.html"><img src="images/account.jpeg" alt="Account"><span>Account</span></a>
+      <a href="cart.html"><img src="images/cart.jpeg" alt="Cart"><span>Cart</span></a>
+    </div>
+  </header>
+
+  <section class="offer-banner">
+    <img src="images/login.jpeg" alt="First Purchase Discount">
+    <div class="offer-text">
+      <h2>✨ 15% OFF on Your First Purchase ✨</h2>
+      <p>Sign in now and unlock your exclusive welcome discount!</p>
+      <a href="#login" class="claim-btn">Sign In to Claim</a>
+    </div>
+  </section>
+
+  <section class="login-section" id="login">
+    <h2>Enter Mobile Number</h2>
+    <p>We will send you an OTP to verify your number</p>
+
+    <input class="input-box" type="text" placeholder="📞 Phone number">
+    <br>
+    <button class="otp-btn">Request OTP</button>
+
+    <div style="margin-top: 20px;">
+      <p>[Google reCAPTCHA]</p>
+    </div>
+
+    <div class="or-line"></div>
+
+    <div class="whatsapp-login">📲 Login via WhatsApp</div>
+
+    <a href="#" class="help-link">Having trouble logging in?</a>
+
+    <p class="terms">I accept that I have read & understood  
+      <a href="#">Privacy Policy</a> and <a href="#">T&Cs</a>.
+    </p>
+  </section>
+
+</body>
+</html>

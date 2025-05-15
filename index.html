@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EIRA JEWELS</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    header {
+      text-align:start;
+      padding: 2px;
+      background-color: white;
+    }
+
+    .logo {
+      width: 220px; /* adjust size as needed */
+      height: auto;
+    }
+  </style>
+
+
+
+ <style>
+    body {
+      background-color: #fffdfc;
+      font-family: 'Playfair Display', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 0;
+    }
+
+    .icon-bar {
+      display: flex;
+      gap: 40px;
+    }
+
+    .icon-item {
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      color: #4b2e2e;
+      font-size: 14px;
+      transition: transform 0.3s ease;
+    }
+
+    .icon-item img {
+      width: 4px; /* Resize icon */
+      height: 44px;
+      object-fit: contain;
+      margin-bottom: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .icon-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .icon-item:hover {
+      color: #d4a373;
+    }
+  </style>
+
+
+
+
+</head>
+<body>
+
+
+  <header>
+    <img src="images/elogo.png" alt="EIRA Logo" class="logo">
+
+
+  <div class="icon-bar">
+    <a href="index.html" class="icon-item">
+      <img src="images/home.png" alt="Home">
+      <div>Home</div>
+    </a>
+    <a href="cart.html" class="icon-item">
+      <img src="images/cart.png" alt="Cart">
+      <div>Cart</div>
+    </a>
+    <a href="wishlist.html" class="icon-item">
+      <img src="images/wishlist.png" alt="Wishlist">
+      <div>Wishlist</div>
+    </a>
+    <a href="account.html" class="icon-item">
+      <img src="images/account.png" alt="Account">
+      <div>Account</div>
+    </a>
+  </div>
+
+
+  </header>
+
+  <div class="top-bar">
+    
+    <section class="hero-banner">
+    <!-- You can place a beautiful jewelry background image here -->
+  </section>
+  </div>
+
+  <div class="search-box">
+    <input type="text" placeholder='Search "Rings, Pendants, Bracelets, Anklets, Earrings"'>
+    <button>🔍</button>
+  </div>
+
+  <!-- Slider Section -->
+  <div class="slider">
+    <div class="slides" id="slides">
+      <div class="slide"><img src="images/EIRA-pic.jpeg" alt="Slide 1"></div>
+      <div class="slide"><img src="images/EIRA1.jpeg" alt="Slide 2"></div>
+      <div class="slide"><img src="images/EIRA2.jpeg" alt="Slide 3"></div>
+    </div>
+
+    <div class="navigation-manual">
+      <span class="manual-btn" onclick="goToSlide(0)"></span>
+      <span class="manual-btn" onclick="goToSlide(1)"></span>
+      <span class="manual-btn" onclick="goToSlide(2)"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <h3 class="section-heading">Popular Categories</h3>
+
+  
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <div class="category-item">
+        <div class="category-circle"><img src="images/pendants.jpeg" alt="Pendants" /></div>
+        <div class="category-label">Pendants</div>
+      </div>
+      <div class="category-item">
+        <div class="category-circle"><img src="images/rings.jpeg" alt="Rings" /></div>
+        <div class="category-label">Rings</div>
+      </div>
+      <div class="category-item">
+        <div class="category-circle"><img src="images/bracelets.jpeg" alt="Bracelets" /></div>
+        <div class="category-label">Bracelets</div>
+      </div>
+      <div class="category-item">
+        <div class="category-circle"><img src="images/earings.jpeg" alt="Earrings" /></div>
+        <div class="category-label">Earrings</div>
+      </div>
+      <div class="category-item">
+        <div class="category-circle"><img src="images/ideas.jpeg" alt="" /></div>
+        <div class="category-label">Gift Ideas</div>
+      </div>
+      <div class="category-item">
+        <div class="category-circle"><img src="images/anklets.jpeg" alt="Anklets" /></div>
+        <div class="category-label">Anklets</div>
+      </div>
+      <div class="category-item">
+        <div class="category-circle"><img src="images/Personalised.jpeg" alt="Personalized" /></div>
+        <div class="category-label">Personalized</div>
+      </div>
+      <div class="category-item">
+        <div class="category-circle"><img src="images/Nose Pin.jpeg" alt="Nose Pin" /></div>
+        <div class="category-label">Nose Pin</div>
+      </div>
+  
+      <div class="category-item">
+        <div class="category-circle"><img src="images/pendants.jpeg" alt="Pendants" /></div>
+        <div class="category-label">Pendants</div>
+      </div>
+      <div class="category-item">
+        <div class="category-circle"><img src="images/rings.jpeg" alt="Rings" /></div>
+        <div class="category-label">Rings</div>
+      </div>
+      <div class="category-item">
+        <div class="category-circle"><img src="images/bracelets.jpeg" alt="Bracelets" /></div>
+        <div class="category-label">Bracelets</div>
+      </div>
+      <div class="category-item">
+        <div class="category-circle"><img src="images/earings.jpeg" alt="Earrings" /></div>
+        <div class="category-label">Earrings</div>
+      </div>
+      <div class="category-item">
+        <div class="category-circle"><img src="images/ideas.jpeg" alt="" /></div>
+        <div class="category-label">Gift Ideas</div>
+      </div>
+      <div class="category-item">
+        <div class="category-circle"><img src="images/anklets.jpeg" alt="Anklets" /></div>
+        <div class="category-label">Anklets</div>
+      </div>
+      <div class="category-item">
+        <div class="category-circle"><img src="images/Personalised.jpeg" alt="Personalized" /></div>
+        <div class="category-label">Personalized</div>
+      </div>
+      <div class="category-item">
+        <div class="category-circle"><img src="images/Nose Pin.jpeg" alt="Nose Pin" /></div>
+        <div class="category-label">Nose Pin</div>
+      </div>
+  
+     
+      </div>
+    </div>
+  </div>
+
+  
+  
+<h4 class="section-heading cursive-text">Find Jewelry For Moments That Matter</h4>  
+
+
+<div class="section">
+  <img src="images/F2.jpeg">
+  <div class="content">
+    <h2>"Wrapped in Wonder"</h2>
+    <p>Discover rings that speak your story in every shimmer.</p>
+    <a href="#" class="btn">See All Rings</a>
+  </div>
+</div>
+
+<!-- Section 2 -->
+<div class="section">
+  <img src="images/F6.jpeg">
+  <div class="content">
+    <h2>"Golden Whispers"</h2>
+    <p>Every necklace is a soft secret your heart wants to tell.</p>
+    <a href="#" class="btn">Explore Necklaces</a>
+  </div>
+</div>
+
+<!-- Section 3 -->
+<div class="section">
+  <img src="images/F5.jpeg">
+  <div class="content">
+    <h2>"Whispers in the Wind"</h2>
+    <p>Let your earrings dance with grace, charm, and joy.</p>
+    <a href="#" class="btn">Browse Earrings</a>
+  </div>
+</div>
+
+<!-- Section 4 -->
+<div class="section">
+  <img src="images/F3.jpeg">
+  <div class="content">
+    <h2>"Hold Me Lightly"</h2>
+    <p>Bracelets that hold your moments with elegance.</p>
+    <a href="#" class="btn">See Bracelets</a>
+  </div>
+</div>
+
+<script>
+  const sections = document.querySelectorAll('.section');
+
+  const reveal = new IntersectionObserver(entries => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        const isEven = index % 2 === 0;
+        entry.target.classList.add(isEven ? 'visible-left' : 'visible-right');
+      } else {
+        entry.target.classList.remove('visible', 'visible-left', 'visible-right');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  sections.forEach(section => reveal.observe(section));
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
