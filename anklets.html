@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anklets - EIRA Jewels</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: black;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: papayawhip;
+      padding: 4px 10px;
+      height: 75px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      height: 95px;
+    }
+
+    .icons {
+      display: flex;
+      gap: 16px;
+    }
+
+    .icons a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .icons img {
+      width: 35px;
+      height: 35px;
+      margin-bottom: 4px;
+    }
+
+    .poster-image {
+      width: 1200px;
+      height: 520px;
+      border-radius: 3px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      display: block;
+      margin: 10px auto;
+    }
+
+    .anklet-section {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .anklet-section h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    
+    .anklet-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.anklet-slider {
+  width: 160px;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.anklet-slider .slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.anklet-slider .slide.active {
+  opacity: 1;
+}
+
+.anklet-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+  
+   .anklet-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.anklet-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider img {
+  width: 100%;
+  display: none;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.slider img.active {
+  display: block;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 10px;
+}
+
+.slider-buttons button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.anklet-info {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.single-anklet {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.single-anklet:active {
+  transform: scale(1.1);
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <img src="images/elogo.png" alt="EIRA Logo" class="logo" />
+    <div class="icons">
+      <a href="index.html">
+        <img src="images/home.jpeg" alt="Home" />
+        <span>Home</span>
+      </a>
+      <a href="wishlist.html">
+        <img src="images/wish.jpeg" alt="Wishlist" />
+        <span>Wishlist</span>
+      </a>
+      <a href="account.html">
+        <img src="images/account.jpeg" alt="Account" />
+        <span>Account</span>
+      </a>
+      <a href="cart.html">
+        <img src="images/cart.jpeg" alt="Cart" />
+        <span>Cart</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Poster Image (Small & Rectangular) -->
+  <img src="images/anklets-main.jpeg" alt="EIRA Anklets Poster" class="poster-image">
+
+ <h2 style="
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  font-weight: normal;
+  margin: 60px 0 30px 0;
+  color: bl;
+  letter-spacing: 1px;
+  position: relative;
+">
+  ✧ Explore the Essence of Elegance ✧
+</h2>
+
+
+
+  <div class="anklet-gallery">
+  <!-- Anklets with slider -->
+  <div class="anklet-card">
+    <div class="slider" data-index="0">
+      <img src="images/A1a.jpeg" class="active" />
+      <img src="images/A1b.jpeg" />
+      <div class="slider-buttons">
+        <button onclick="prevSlide(0)">&#8592;</button>
+        <button onclick="nextSlide(0)">&#8594;</button>
+      </div>
+    </div>
+    <div class="anklet-info">Golden Wave Anklet<br><span style="color:#d25555">₹1,499</span></div>
+  </div>
+
+  <div class="anklet-card">
+    <div class="slider" data-index="1">
+      <img src="images/A2a.jpeg" class="active" />
+      <img src="images/A2b.jpeg" />
+      <div class="slider-buttons">
+        <button onclick="prevSlide(1)">&#8592;</button>
+        <button onclick="nextSlide(1)">&#8594;</button>
+      </div>
+    </div>
+    <div class="anklet-info">Pearl Sand Charm<br><span style="color:#d25555">₹1,899</span></div>
+  </div>
+
+  <div class="anklet-card">
+    <div class="slider" data-index="2">
+      <img src="images/A3a.jpeg" class="active" />
+      <img src="images/A3b.jpeg" />
+      <div class="slider-buttons">
+        <button onclick="prevSlide(2)">&#8592;</button>
+        <button onclick="nextSlide(2)">&#8594;</button>
+      </div>
+    </div>
+    <div class="anklet-info">Sea Breeze Silver<br><span style="color:#d25555">₹2,199</span></div>
+  </div>
+
+  <div class="anklet-card">
+    <div class="slider" data-index="3">
+      <img src="images/A4a.jpeg" class="active" />
+      <img src="images/A4b.jpeg" />
+      <div class="slider-buttons">
+        <button onclick="prevSlide(3)">&#8592;</button>
+        <button onclick="nextSlide(3)">&#8594;</button>
+      </div>
+    </div>
+    <div class="anklet-info">Sea Breeze Silver<br><span style="color:#d25555">₹2,199</span></div>
+  </div>
+
+  <div class="anklet-card">
+    <div class="slider" data-index="4">
+      <img src="images/A5a.jpeg" class="active" />
+      <img src="images/A5b.jpeg" />
+      <div class="slider-buttons">
+        <button onclick="prevSlide(4)">&#8592;</button>
+        <button onclick="nextSlide(4)">&#8594;</button>
+      </div>
+    </div>
+    <div class="anklet-info">Sea Breeze Silver<br><span style="color:#d25555">₹2,199</span></div>
+  </div>
+
+  <div class="anklet-card">
+    <div class="slider" data-index="5">
+      <img src="images/A6a.jpeg" class="active" />
+      <img src="images/A6b.jpeg" />
+      <div class="slider-buttons">
+        <button onclick="prevSlide(5)">&#8592;</button>
+        <button onclick="nextSlide(5)">&#8594;</button>
+      </div>
+    </div>
+    <div class="anklet-info">Sea Breeze Silver<br><span style="color:#d25555">₹2,199</span></div>
+  </div>
+
+  <div class="anklet-card">
+    <div class="slider" data-index="6">
+      <img src="images/A7a.jpeg" class="active" />
+      <img src="images/A7b.jpeg" />
+      <div class="slider-buttons">
+        <button onclick="prevSlide(6)">&#8592;</button>
+        <button onclick="nextSlide(6)">&#8594;</button>
+      </div>
+    </div>
+    <div class="anklet-info">Sea Breeze Silver<br><span style="color:#d25555">₹2,199</span></div>
+  </div>
+
+  <div class="anklet-card">
+    <div class="slider" data-index="7">
+      <img src="images/A8a.jpeg" class="active" />
+      <img src="images/A8b.jpeg" />
+      <div class="slider-buttons">
+        <button onclick="prevSlide(7)">&#8592;</button>
+        <button onclick="nextSlide(7)">&#8594;</button>
+      </div>
+    </div>
+    <div class="anklet-info">Sea Breeze Silver<br><span style="color:#d25555">₹2,199</span></div>
+  </div>
+
+  <div class="anklet-card">
+    <div class="slider" data-index="8">
+      <img src="images/A9a.jpeg" class="active" />
+      <img src="images/A9b.jpeg" />
+      <div class="slider-buttons">
+        <button onclick="prevSlide(8)">&#8592;</button>
+        <button onclick="nextSlide(8)">&#8594;</button>
+      </div>
+    </div>
+    <div class="anklet-info">Sea Breeze Silver<br><span style="color:#d25555">₹2,199</span></div>
+  </div>
+
+  <!-- Single-image anklets with click zoom -->
+  <div class="anklet-card">
+    <img src="images/A10.jpeg" class="single-anklet" />
+    <div class="anklet-info">Ocean Shell Sparkle<br><span style="color:#d25555">₹1,299</span></div>
+  </div>
+
+  <div class="anklet-card">
+    <img src="images/A11.jpeg" class="single-anklet" />
+    <div class="anklet-info">Desert Dusk Anklet<br><span style="color:#d25555">₹1,499</span></div>
+  </div>
+
+  <div class="anklet-card">
+    <img src="images/A12.jpeg" class="single-anklet" />
+    <div class="anklet-info">Golden Horizon<br><span style="color:#d25555">₹1,599</span></div>
+  </div>
+
+  <div class="anklet-card">
+    <img src="images/A13.jpeg" class="single-anklet" />
+    <div class="anklet-info">Blush Petal Anklet<br><span style="color:#d25555">₹1,399</span></div>
+  </div>
+
+  <div class="anklet-card">
+    <img src="images/A14.jpeg" class="single-anklet" />
+    <div class="anklet-info">Tide Whisper Charm<br><span style="color:#d25555">₹1,799</span></div>
+  </div>
+
+  <div class="anklet-card">
+    <img src="images/A15.jpeg" class="single-anklet" />
+    <div class="anklet-info">Pearl Coastline<br><span style="color:#d25555">₹1,999</span></div>
+  </div>
+</div>
+
+
+
+
+<script>
+function nextSlide(index) {
+  const sliders = document.querySelectorAll('.slider');
+  const currentSlider = sliders[index];
+  const images = currentSlider.querySelectorAll('img');
+  let activeIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+  images[activeIndex].classList.remove('active');
+  images[(activeIndex + 1) % images.length].classList.add('active');
+}
+
+function prevSlide(index) {
+  const sliders = document.querySelectorAll('.slider');
+  const currentSlider = sliders[index];
+  const images = currentSlider.querySelectorAll('img');
+  let activeIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+  images[activeIndex].classList.remove('active');
+  images[(activeIndex - 1 + images.length) % images.length].classList.add('active');
+}
+</script>
+
+
+
+</body>
+</html>

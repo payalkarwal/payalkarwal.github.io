@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empty Cart - EIRA Jewels</title>
+  <style>
+    body {
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      background-color:white;
+      color: black;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: papayawhip;
+      padding: 4px 16px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.40);
+    }
+
+    .logo {
+      height: 70px;
+      width: 108px;
+    }
+
+    .icons {
+      display: flex;
+      gap: 16px;
+    }
+
+    .icons a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .icons img {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 5px;
+    }
+
+    .container {
+      padding: 60px 20px;
+    }
+
+    .cart-image {
+      max-width: 220px;
+      margin-bottom: 0px;
+      animation: popIn 1s ease-in-out;
+    }
+    
+    .explore-collection-btn {
+      background-color:darksalmon;
+      color: white;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 80px;
+      margin-top: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.29);
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    .start-shopping-btn:hover, .explore-collection-btn:hover {
+      background-color: #d07070;
+      transform: scale(1.05);
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    h2 {
+      font-size: 27px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 17px;
+      color:black;
+      margin-bottom: 14px;
+    }
+
+    .recommended {
+      margin-top: 59px;
+    }
+
+    .product-grid {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .product-card {
+      width: 200px;
+  background-color: #fff5f5;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.80);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 15px 10px;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.120);
+    }
+
+
+    .product-card img {
+  width: 200px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-title {
+  font-size: 16px;
+  margin: 10px 0 4px;
+  font-weight: 600;
+  color:black;
+}
+
+.product-price {
+  color: #d25555;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+    .testimonial {
+      margin-top: 50px;
+      font-style: italic;
+      color:black;
+    }
+
+    .promo-banner {
+      background-color:darksalmon;
+      padding: 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <img src="images/elogo.png" alt="EIRA Logo" class="logo">
+    <div class="icons">
+      <a href="index.html">
+        <img src="images/home.jpeg" alt="Home">
+        <span>Home</span>
+      </a>
+      <a href="wishlist.html">
+        <img src="images/wish.jpeg" alt="Wishlist">
+        <span>Wishlist</span>
+      </a>
+      <a href="account.html">
+        <img src="images/account.jpeg" alt="Account">
+        <span>Account</span>
+      </a>
+      <a href="cart.html">
+        <img src="images/cart.jpeg" alt="Cart">
+        <span>Cart</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+    <img src="images/cart-pic.png" alt="Empty Cart" class="cart-image">
+    <p>Your cart is waiting</p>
+    <h2>Checkout what’s trending!</h2>
+    
+    <!-- Explore Our Collection Button -->
+    <a href="index.html">
+      <button class="explore-collection-btn">Explore Our Collection</button>
+    </a>
+    
+    
+    <div class="recommended">
+      <h3>✧˖° You might love these ✧˖°</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/bracelet-cart.jpeg"  width="200">
+          <p>Ocean Pearl Bracelet</p>
+          <span>₹2,499</span>
+        </div>
+        <div class="product-card">
+          <img src="images/nack-cart.jpeg" width="200">
+          <p>Royal Ember Necklace</p>
+          <span>₹3,499</span>
+        </div>
+        <div class="product-card">
+          <img src="images/ring-cart.jpeg"  width="200">
+          <p>Fairy Ring</p>
+          <span>₹1,999</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <blockquote>“EIRA Jewels made my anniversary extra special. Loved the quality!” – Ayesha S.</blockquote>
+    </div>
+
+    <div class="promo-banner">
+      🎁 Don’t forget! Get 15% OFF on your first order. Use code: <strong>WELCOME15</strong>
+    </div>
+  </div>
+</body>
+</html>

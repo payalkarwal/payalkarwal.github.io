@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rings - EIRA Jewels</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: black;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: papayawhip;
+      padding: 4px 10px;
+      height: 75px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      height: 95px;
+    }
+
+    .icons {
+      display: flex;
+      gap: 16px;
+    }
+
+    .icons a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .icons img {
+      width: 35px;
+      height: 35px;
+      margin-bottom: 4px;
+    }
+
+    .poster-image {
+      width: 1200px;
+      height: 430px;
+      border-radius: 3px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.30);
+      display: block;
+      margin: 10px auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: 'Georgia', serif;
+      font-size: 23px;
+      font-weight: bold;
+      margin: 30px 0 20px 0;
+      color: black;
+      letter-spacing: 1px;
+    }
+
+    .ring-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .ring-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .ring-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .ring-card img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee;
+    }
+
+    .ring-info {
+      padding: 12px;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .ring-info span {
+      display: block;
+      color: #d25555;
+      margin-top: 4px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <img src="images/elogo.png" alt="EIRA Logo" class="logo" />
+    <div class="icons">
+      <a href="index.html">
+        <img src="images/home.jpeg" alt="Home" />
+        <span>Home</span>
+      </a>
+      <a href="wishlist.html">
+        <img src="images/wish.jpeg" alt="Wishlist" />
+        <span>Wishlist</span>
+      </a>
+      <a href="account.html">
+        <img src="images/account.jpeg" alt="Account" />
+        <span>Account</span>
+      </a>
+      <a href="cart.html">
+        <img src="images/cart.jpeg" alt="Cart" />
+        <span>Cart</span>
+      </a>
+    </div>
+  </header>
+
+  
+    <img src="images/rings main.jpeg" alt="EIRA Rings Poster" class="poster-image" />
+  
+
+  <h2>✧ Wrapped in Love, Sealed with a Ring. ✧</h2>
+
+  <div class="ring-gallery">
+    <div class="ring-card">
+      <img src="images/R1.jpeg" alt="Rose Gold Sparkle">
+      <div class="ring-info">Rose Gold Sparkle <span>₹1,499</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/R2.jpeg" alt="Diamond Solitaire Band">
+      <div class="ring-info">Diamond Solitaire Band <span>₹1,999</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/R3.jpeg" alt="Twisted Infinity Ring">
+      <div class="ring-info">Twisted Infinity Ring <span>₹1,299</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/R4.jpeg" alt="Moonstone Whisper">
+      <div class="ring-info">Moonstone Whisper <span>₹1,799</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/R5.jpeg" alt="Golden Pearl Bloom">
+      <div class="ring-info">Golden Pearl Bloom <span>₹1,599</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/R6.jpeg" alt="Trio Charm Band">
+      <div class="ring-info">Trio Charm Band <span>₹1,399</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/R7.jpeg" alt="Floral Twist Ring">
+      <div class="ring-info">Floral Twist Ring <span>₹1,199</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/R8.jpeg" alt="Crystal Leaf Band">
+      <div class="ring-info">Crystal Leaf Band <span>₹1,599</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/R9.jpeg" alt="Vintage Gem Halo">
+      <div class="ring-info">Vintage Gem Halo <span>₹1,899</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/R10.jpeg" alt="Elegant Knot Loop">
+      <div class="ring-info">Elegant Knot Loop <span>₹1,299</span></div>
+    </div>
+  </div>
+<div class="ring-card">
+      <img src="images/R11.jpeg" alt="Elegant Knot Loop">
+      <div class="ring-info">Elegant Vintage rings <span>₹1,999</span></div>
+    </div>
+  </div>
+  
+</div>
+</body>
+</html>

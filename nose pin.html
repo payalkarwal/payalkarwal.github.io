@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nose Pin Elegance - EIRA Jewels</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fff;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: papayawhip;
+      padding: 4px 10px;
+      height: 75px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      height: 95px;
+    }
+
+    .icons {
+      display: flex;
+      gap: 16px;
+    }
+
+    .icons a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .icons img {
+      width: 35px;
+      height: 35px;
+      margin-bottom: 4px;
+    }
+
+    .poster-main {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .nosepin-gallery {
+      padding: 60px 20px;
+      background-color: #fff7fa;
+      text-align: center;
+    }
+
+    .gallery-title {
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #a2678a;
+      letter-spacing: 1px;
+    }
+
+    .poster-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .poster img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .poster img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <img src="images/elogo.png" alt="EIRA Logo" class="logo" />
+    <div class="icons">
+      <a href="index.html"><img src="images/home.jpeg" alt="Home" /><span>Home</span></a>
+      <a href="wishlist.html"><img src="images/wish.jpeg" alt="Wishlist" /><span>Wishlist</span></a>
+      <a href="account.html"><img src="images/account.jpeg" alt="Account" /><span>Account</span></a>
+      <a href="cart.html"><img src="images/cart.jpeg" alt="Cart" /><span>Cart</span></a>
+    </div>
+  </header>
+
+  <!-- Poster Image -->
+  <img src="images/Nose pin main.jpeg" alt="Nosepin Collection Poster" class="poster-main" />
+
+  <!-- Gallery Section -->
+  <section class="nosepin-gallery">
+    <h2 class="gallery-title">Nose Pin Elegance</h2>
+    <div class="poster-grid">
+      <div class="poster"><img src="images/NP1.jpeg" alt="Nose Pin 1"></div>
+      <div class="poster"><img src="images/NP2.jpeg" alt="Nose Pin 2"></div>
+      <div class="poster"><img src="images/NP3.jpeg" alt="Nose Pin 3"></div>
+      <div class="poster"><img src="images/N4.jpeg" alt="Nose Pin 4"></div>
+      <div class="poster"><img src="images/NP5.jpeg" alt="Nose Pin 5"></div>
+      <div class="poster"><img src="images/NP6.jpeg" alt="Nose Pin 6"></div>
+      <div class="poster"><img src="images/NP7.jpeg" alt="Nose Pin 7"></div>
+      <div class="poster"><img src="images/NP8.jpeg" alt="Nose Pin 8"></div>
+      <div class="poster"><img src="images/NP9.jpeg" alt="Nose Pin 9"></div>
+      <div class="poster"><img src="images/NP10.jpeg" alt="Nose Pin 10"></div>
+    </div>
+  </section>
+
+</body>
+</html>

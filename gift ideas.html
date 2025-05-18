@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gift Ideas - EIRA Jewels</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: black;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: papayawhip;
+      padding: 4px 10px;
+      height: 75px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      height: 95px;
+    }
+
+    .icons {
+      display: flex;
+      gap: 16px;
+    }
+
+    .icons a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .icons img {
+      width: 35px;
+      height: 35px;
+      margin-bottom: 4px;
+    }
+
+    .poster-image {
+      width: 890px;
+      height: 460px;
+      border-radius: 3px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.50);
+      display: block;
+      margin: 10px auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 1.8rem;
+      color: #b88a44;
+    }
+
+    .ring-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 0 40px 60px;
+    }
+
+    .ring-card {
+      text-align: center;
+      background-color: #fdf6f0;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .ring-card:hover {
+      transform: scale(1.05);
+    }
+
+    .ring-card img {
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .ring-info {
+      padding: 15px;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .ring-info span {
+      display: block;
+      margin-top: 6px;
+      font-weight: bold;
+      color: #c09050;
+    }
+
+    @media (max-width: 768px) {
+      .ring-gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .ring-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <img src="images/elogo.png" alt="EIRA Logo" class="logo" />
+    <div class="icons">
+      <a href="index.html"><img src="images/home.jpeg" alt="Home" /><span>Home</span></a>
+      <a href="wishlist.html"><img src="images/wish.jpeg" alt="Wishlist" /><span>Wishlist</span></a>
+      <a href="account.html"><img src="images/account.jpeg" alt="Account" /><span>Account</span></a>
+      <a href="cart.html"><img src="images/cart.jpeg" alt="Cart" /><span>Cart</span></a>
+    </div>
+  </header>
+
+  <img src="images/gift ideas main.jpeg" alt="Gift Collection Poster" class="poster-image" />
+
+  <h2>✧ Thoughtfully Wrapped, Timelessly Cherished ✧</h2>
+
+  <div class="ring-gallery">
+    <div class="ring-card">
+      <img src="images/G1.jpeg" alt="Love Knot Necklace">
+      <div class="ring-info">Love Knot Necklace <span>₹1,499</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/G2.jpeg" alt="Forever Bracelet">
+      <div class="ring-info">Forever Bracelet <span>₹1,799</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/G3.jpeg" alt="Custom Initial Pendant">
+      <div class="ring-info">Custom Initial Pendant <span>₹1,599</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/G4.jpeg" alt="Heart-Shaped Charm Ring">
+      <div class="ring-info">Heart-Shaped Charm Ring <span>₹1,299</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/G5.jpeg" alt="Pearl Drop Earrings">
+      <div class="ring-info">Pearl Drop Earrings <span>₹1,999</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/G6.jpeg" alt="Vintage Rose Bracelet">
+      <div class="ring-info">Vintage Rose Bracelet <span>₹1,899</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/G7.jpeg" alt="Elegant Gold Ring">
+      <div class="ring-info">Elegant Gold Ring <span>₹1,749</span></div>
+    </div>
+    <div class="ring-card">
+      <img src="images/G8.jpeg" alt="Diamond Studs">
+      <div class="ring-info">Diamond Studs <span>₹2,099</span></div>
+    </div>
+  </div>
+
+</body>
+</html>
